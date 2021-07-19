@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head.ejs")%>
+    <!-- CUSTOM CSS (additional) -->
+    <link rel="stylesheet" href="/styles/3_orders.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="section-1">
+
+    
+
+     <!--right navbar -->
+    <div class="left-nav">
+      <i id = "fa" class="fas fa-bars fa-2x"></i>
+      <ul class="navbar">
+         <li class="nav"><a href="/">Home</a></li>
+          <li class="nav"><a href="/about">About Us</a></li>
+          <li class="nav"><a href="/gallery">Gallery</a></li>
+          <li class="nav"><a href="/orders">Orders</a></li>
+          <li class="nav"><a href="/contacts">Contacts</a></li>
+        </ul>
+
+    </div>
+    <div class="right-nav"><h2>TA<span style="color: red">f</span>LA</h2></div>
+  </div>
+    </header>
+
+    <main>
+      <main class="form">
+        <div class="main-block">
+          <h1>Order</h1>
+          <form>
+            <h3>Your Info</h3>
+            <div class="info">
+              <input
+                class="fname"
+                type="text"
+                name="name"
+                placeholder="Full name"
+                id="customerName"
+              />
+              <input
+                type="text"
+                name="name"
+                placeholder="Email"
+                id="customerEmail"
+              />
+              <input
+                type="text"
+                name="name"
+                placeholder="Phone number"
+                id="customerPhone"
+              />
+              <input
+                type="text"
+                name="name"
+                placeholder="Address"
+                id="customerAddress"
+              />
+              <textarea
+                name="desk-info"
+                id="desk-info"
+                cols="38"
+                rows="5"
+                placeholder="Your desk information (Wood, dimensions, color)..."
+              ></textarea>
+            </div>
+            <h3>Your Cart</h3>
+            <div class="customer-cart-output">
+              <div></div>
+            </div>
+            <button id="submit-order">Submit</button>
+          </form>
+        </div>
+      </main>
+  
+    </main>
+
+    <%- include("./partials/footer.ejs")%>
+  </body>
+</html>

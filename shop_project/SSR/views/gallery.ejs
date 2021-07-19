@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head.ejs")%>
+    <!-- CUSTOM CSS (additional) -->
+    <link rel="stylesheet" href="/styles/1_header.css" />
+    <link rel="stylesheet" href="/styles/3_index.css" />
+    <link rel="stylesheet" href="/styles/2_main.css" />
+    <link rel="stylesheet" href="/styles/3_gallery.css" />
+    <!-- CUSTOM JS -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="section-1">
+
+    
+
+     <!--right navbar -->
+    <div class="left-nav">
+      <i id = "fa" class="fas fa-bars fa-2x"></i>
+      <ul class="navbar">
+         <li class="nav"><a href="/">Home</a></li>
+          <li class="nav"><a href="/about">About Us</a></li>
+          <li class="nav"><a href="/gallery">Gallery</a></li>
+          <li class="nav"><a href="/orders">Orders</a></li>
+          <li class="nav"><a href="/contacts">Contacts</a></li>
+        </ul>
+
+    </div>
+    <div class="right-nav"><h2>TA<span style="color: red">f</span>LA</h2></div>
+  </div>
+    </header>
+
+    <main class="main-gallery-page">
+
+      <section class="gallery-section">
+        <div class="gallery">
+
+  <div class="top-text">
+    <h1>GALLERY OF OUR CREATIONS</h1>
+  </div>
+  <div class="bars">
+  <!-- <section class="article-container"> -->
+
+    <% data.forEach(item => { %>
+    <div class="card">
+      <div class="card-top">
+        <img src="<%= item.image %>" alt=""/>
+      </div>
+      <div class="card-bottom">
+
+        <div class="bottom-text-1">
+          <h2><%= item.title %></h2> 
+        </div>
+
+        <div class="bottom-text-2">
+          <p><%= item.measurements %></p>
+          <h3>Color: <%= item.color %></h3>
+          <h4><span style="color:black; font-family: Dancing script">Material:</span> <%= item.material %></h4>
+        </div>
+
+      </div> 
+      <!-- card bottom closure -->
+    </div>
+    <!-- card closure -->
+
+
+
+    <% }) %>
+  </div>
+  <!-- </section> -->
+</div>
+</div>
+</section>
+    </main>
+
+    <%- include("./partials/footer.ejs")%>
+  </body>
+</html>

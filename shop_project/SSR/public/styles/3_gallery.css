@@ -1,0 +1,103 @@
+.main-gallery-page {
+}
+
+.gallery-section {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.gallery {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top-text{
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top-text h1{
+    font-family: "Questrial", cursive;
+    font-size: 2rem;
+    color: orange;
+}
+
+.bars {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    height: 30rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+}
+
+.card-top {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-top img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    /* overflow: hidden; */
+    background-position: center;
+}
+
+.card-bottom {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bottom-text-1{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-text-2 {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bottom-text-2 h3 {
+    color: var(--dark-grey);
+    font-weight: 400;
+}
+
+.bottom-text-2 h4 {
+    font-family: "Dancing Script", cursive;
+    color: orange;
+}
+

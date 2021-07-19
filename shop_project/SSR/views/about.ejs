@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head.ejs") %>
+    <link rel="stylesheet" href="/styles/3_about.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="section-1">
+
+    
+
+     <!--right navbar -->
+    <div class="left-nav">
+      <i id = "fa" class="fas fa-bars fa-2x"></i>
+      <ul class="navbar">
+         <li class="nav"><a href="/">Home</a></li>
+          <li class="nav"><a href="/about">About Us</a></li>
+          <li class="nav"><a href="/gallery">Gallery</a></li>
+          <li class="nav"><a href="/orders">Orders</a></li>
+          <li class="nav"><a href="/contacts">Contacts</a></li>
+        </ul>
+
+    </div>
+    <div class="right-nav"><h2>TA<span style="color: red">f</span>LA</h2></div>
+  </div>
+    </header>
+
+
+ 
+
+
+    <main>
+      <!-- video -->
+      <div class="video">
+        <iframe
+          width="1300"
+          height=790"
+          src="https://www.youtube.com/embed/ENSjcy3eh8U"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- Info about orders (order online, shipping etc) -->
+      <div class="info-about-orders">
+        <!-- order online -->
+        <div id="order-online">
+          <h3>
+            <span class="bigger-txt"><i class="fas fa-store"></i></span>
+            Order online
+          </h3>
+          <p>You can place order in our <a href="">order page</a></p>
+        </div>
+        <div id="payment-methods">
+          <h3>
+            <span class="bigger-txt"><i class="fas fa-credit-card"></i></span>
+            Payment methods
+          </h3>
+          <p>Payments can be made via online, PayPal or on delivery</p>
+        </div>
+        <div id="free-shipping">
+          <h3>
+            <span class="bigger-txt"><i class="far fa-paper-plane"></i></span>
+            Free shipping
+          </h3>
+          Free shipping when order is over 500$
+        </div>
+        <div id="Return policy">
+          <h3>
+            <span class="bigger-txt"><i class="fas fa-undo"></i></span>
+            Return policy
+          </h3>
+          <p>30 days return policy and 5 year warranty</p>
+        </div>
+      </div>
+      <div class="address">
+        <div class="addres-one">
+          <h2>
+            <a
+              href="https://www.google.lt/maps/place/Laisv%C4%97s+statula/@40.6971494,-74.2598655,10z/data=!4m13!1m7!3m6!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2sNiujorkas,+Jungtin%C4%97s+Valstijos!3b1!8m2!3d40.7127753!4d-74.0059728!3m4!1s0x89c25090129c363d:0x40c6a5770d25022b!8m2!3d40.6892494!4d-74.0445004"
+              ><i class="fas fa-map-pin"></i
+            ></a>
+            New York
+          </h2>
+          <p>
+            2954 Golden Estates, <br />
+            New York, USA. (571) 400-1255 <br />
+            info@stalas456.com
+          </p>
+        </div>
+
+        <div class="addres-two">
+          <h2>
+            <a
+              href="https://www.google.lt/maps/place/Va%C5%A1ingtonas,+Kolumbijos+apygarda,+Jungtin%C4%97s+Valstijos/@38.84456,-77.2616034,10z/data=!4m5!3m4!1s0x89b7c6de5af6e45b:0xc2524522d4885d2a!8m2!3d38.9071923!4d-77.0368707"
+              ><i class="fas fa-map-pin"></i
+            ></a>
+            Washington DC
+          </h2>
+          <p>
+            2954 Golden Estates, <br />
+            Washington DC, USA. (571) 400-1111 <br />
+            office@stalas456.com
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

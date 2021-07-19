@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head.ejs") %>
+     <!-- CUSTOM CSS (additional) -->
+     <link rel="stylesheet" href="/styles/3_admin.css" />
+     <link rel="stylesheet" href="/styles/3_blog.css" />
+     <!-- CUSTOM  JS -->
+    <script defer src="/scripts/admin.js"></script>
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="section-1">
+
+    
+
+     <!--right navbar -->
+    <div class="left-nav">
+      <i id = "fa" class="fas fa-bars fa-2x"></i>
+      <ul class="navbar">
+         <li class="nav"><a href="/">Home</a></li>
+          <li class="nav"><a href="/about">About Us</a></li>
+          <li class="nav"><a href="/gallery">Gallery</a></li>
+          <li class="nav"><a href="/orders">Orders</a></li>
+          <li class="nav"><a href="/contacts">Contacts</a></li>
+        </ul>
+
+    </div>
+    <div class="right-nav">TAfLA</div>
+  </div>
+    </header>
+
+
+
+    <main>
+      <section>
+        <h1>ADMIN PANEL</h1>
+        <h3>Create post</h3>
+
+        <form action="/blog" method ="POST">
+          <label for="postTitle">Title</label>
+          <input type ="text" name="title" id="title" />
+          
+
+          <label for="postExcerpt">Excerpt</label>
+          <input type ="text" name="excerpt" id="excerpt" />
+          
+
+          <label for="postContent">Content</label>
+          <textarea name ="postContent" id="postContent" cols="30" rows="10"></textarea>
+          
+
+          <input type="submit" />
+        </form>
+
+      </section>
+      <section>
+        <h3>Post list</h3>
+        <div class="posts-container">
+          <% posts.forEach(post => { %>
+          <div class="post">
+            <h3><%= post.title %></h3>
+            <p><%= post.excerpt %></p>
+            <button data-id="<%= post._id%>">Delete</button>
+          </div>
+          <% }) %>
+        </div>
+      </section>
+    </main>
+
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

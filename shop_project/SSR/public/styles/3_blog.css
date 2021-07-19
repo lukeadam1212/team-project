@@ -1,0 +1,28 @@
+/* MOBILE */
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.posts-container .post {
+  box-sizing: border-box;
+
+  width: calc(100% / 2 - 15px);
+  margin: 7.5px;
+  padding: 10px 15px;
+  background-color: #f4f4f4;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .posts-container .post {
+    width: calc(100% / 3 - 15px);
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .posts-container .post {
+    width: calc(100% / 4 - 15px);
+  }
+}

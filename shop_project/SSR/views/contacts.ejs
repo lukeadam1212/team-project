@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head.ejs")%>
+    <!-- CUSTOM CSS (additional) -->
+    <link rel="stylesheet" href="/styles/3_blog.css" />
+    <link rel="stylesheet" href="/styles/3_contact.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="section-1">
+
+    
+
+     <!--right navbar -->
+    <div class="left-nav">
+      <i id = "fa" class="fas fa-bars fa-2x"></i>
+      <ul class="navbar">
+         <li class="nav"><a href="/">Home</a></li>
+          <li class="nav"><a href="/about">About Us</a></li>
+          <li class="nav"><a href="/gallery">Gallery</a></li>
+          <li class="nav"><a href="/orders">Orders</a></li>
+          <li class="nav"><a href="/contacts">Contacts</a></li>
+        </ul>
+
+    </div>
+    <div class="right-nav"><h2>TA<span style="color: red">f</span>LA</h2></div>
+  </div>
+    </header>
+
+    <main>
+      <main>
+        <div class="wrapper">
+          <form class="form">
+            <div class="pageTitle title">Contact Us</div>
+            <input type="text" class="name formEntry" placeholder="Name" />
+            <input type="text" class="email formEntry" placeholder="Email" />
+            <textarea class="message formEntry" placeholder="Message"></textarea>
+            <h3>Or you can contact us (571) 400-1255</h3>
+            <br />
+            <button class="submit formEntry" ">Submit</button>
+          </form>
+        </div>
+      </main>
+    </main>
+
+    <%- include("./partials/footer.ejs")%>
+  </body>
+</html>

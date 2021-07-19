@@ -1,0 +1,10 @@
+footer {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  height: 5vh;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
