@@ -1,0 +1,72 @@
+Komandinis projektas
+Įsivaizduokite, kad į Jūsų komandą kreipėsi vietinė įmonė, kuri gamina status pagal užsakymą. Jūs jiems turite sukurti interneto svetainė (užsakymų sistemą), kurioje bus matomi šie puslapiai:
+
+
+	
+Pagrindinis (galite paliki tušičą, tik su antrašte, o esant laiko sukurti išvaizdą ir jam);
+	
+Apie mus (galite paliki tušičą, tik su antrašte, o esant laiko sukurti išvaizdą ir jam);
+	
+Atlikti darbai (turite atvaizdupti 10 sukurtų stalų darbų, o informacija (nuotrauka, pavadinimas, matmenys, splava) turi būti imama iš DB ir atvaizduojama SSR arba CSR būdu);
+	
+Užsakyti stalą (turi būti sukurta forma, kurioje užsakovas gali nurodyti: vardą ir pavardę, el. paštą, telefoną, norimo stalo aprašymą(splava, matmenys, medžio rūšis ir pan.))
+	
+Kontaktai (galite paliki tušičą, tik su antrašte, o esant laiko sukurti išvaizdą ir jam);
+	
+Administravimas (puslapis yra skirtas svetainės administratoriui t.y. užsakovui, kuriame jis galės matyti atliktus užsakymus ir pažymėti atliktus (turi būti mygtukas arba checkbox'as, kurį paspaudus prie užsakymo bus pateiktas nurodymas, kad atlikta)).
+
+ 
+Papildoma informacija:
+
+
+	
+Komandos: sudarys po 2 žmonės;
+	
+Atlikimo terminas: iki 13 val. (arba per savaitgalį), nes pirmadienį pristatymas;
+	
+Dizainas: pagal save, galima naudoti ir Bootstrap ar kitą CSS karkasą;
+
+ 
+Rekomenduojama darbų seka:
+
+
+	
+Frontend:
+	
+
+		
+Svetainės medžio ir vidinių puslapių sukūrimas;
+		
+Dizaino (UX) wireframe sukūrimas (ir pasitvirtimas komandoje);
+		
+Dizaino (UI) sukūrimas (ir pasitvirtimas komandoje);
+		
+Dizaino išvaizdos programavimas (HTML,CSS) (galima kartu pasiskirčius puslapius arba vienas kuria juos...);
+		
+Dizaino funkcijos programavimas (JS) (galima kartu pasiskirčius puslapius arba vienas kuria juos...);
+	
+	
+	
+Backend:
+	
+
+		
+Serverio sukūrimas (express, cors, mongoose, nodemon, ejs?);
+		
+DB sukūrimas (DB sukūrimas MongoDB platformoje, mongoose diegimas, schemos sukūrimas (Orders, Porfolio))
+		
+Jeigu Rest API (ir CSR) route sukūrimas:
+		
+
+			
+GET route skirtas Atlikti darbai puslapio informacijai (GET /api/portfolio/)
+			
+POST route skirtas Užsakyti stalą puslapio informacijai (POST /api/orders/)
+			
+GET route skirtas Administravimas puslapio informacijai "Nauji užsakymai" (GET /api/orders/)
+			
+PUT route skirtas Administravimas puslapio informacijai "Nauji užsakymai" ir užsakymo statuso pakeitimui iš "Vykdomas" į "Atliktas" (PUT /api/orders/:id)
+		
+		
+		
+Jeigu Template engine (ir SSR) ejs puslapių sukūrimas;
